@@ -127,19 +127,4 @@ userSchema.pre('remove', async function (next) {
 // explicitly use it now so that we can use the middleware function
 const User = mongoose.model('User', userSchema)
 
-// const newUser = new User({
-//     name: 'Eugene   ',
-//     email: 'eugenektky96@hotmail.com',
-//     password: 'Password',
-//     age: 20
-// })
-
-// //this is to see if our newly created user is successful or not
-// newUser.save().then(()=>{
-//     console.log(newUser)
-// }).catch((error)=>{
-//     console.log('Error', error)
-// })
-
-
 module.exports = User

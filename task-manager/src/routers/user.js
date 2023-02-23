@@ -19,12 +19,6 @@ userRouter.post('/users', async (req, res) => {
     } catch (e) {
         res.status(400).send(e)
     }
-    // console.log(req.body)
-    // user.save().then(() => {
-    //     res.status(201).send(user)
-    // }).catch((e)=>{
-    //     res.status(400).send(e)
-    // })
 })
 
 userRouter.post('/users/login', async (req, res) => {
